@@ -13,6 +13,7 @@ nav ul {
     overflow: hidden;
     display: flex;
     align-items: center;
+    overflow-x: auto;
 }
 
 nav li {
@@ -33,18 +34,44 @@ p {
     margin: 10px;
     padding: 10px;
 }
+body > ul {
+    font-size: 25px;
+}
 h1, h2 {
     margin: 10px;
     padding: 10px;
 }
-a {
+nav > ul > li > a {
     color: #000000;
     text-decoration: none;
     padding: 1.5px 10px;
     border-radius: 6px;
 }
-a:hover {
+nav > ul > li > a:hover {
     color: #000000;
     background-color: #f3f3f3;
     font-weight: bold;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.flex-item {
+    flex: 1 0 calc(9% - 10px);
+    border-style: groove;
+    border-radius: 6px;
+    background-color: #ebebeb;
+}
+.flex-item > a > p {
+    width: 100%; 
+    box-sizing: border-box; 
+    background-color: #c4c4c4; 
+    margin: 0%; 
+    padding: 2px;
+    color: #000000; 
+    font-weight: bold;
+    height: auto;
 }
